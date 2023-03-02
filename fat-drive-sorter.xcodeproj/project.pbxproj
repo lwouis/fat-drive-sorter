@@ -122,6 +122,7 @@
 		BF0C86C1DD189AD7D4AA4565 /* errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
 		BF0C86C6046B8551FFACF524 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		BF0C86F8D1AE0B267FB3DF41 /* FAT_fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAT_fs.h; sourceTree = "<group>"; };
+		BF0C872454DB79FF845B3CBE /* android-chrome-256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "android-chrome-256x256.png"; sourceTree = "<group>"; };
 		BF0C8743EE6CC8534EE5FD8F /* FAT_fs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FAT_fs.c; sourceTree = "<group>"; };
 		BF0C874C9F62B5F4F378593B /* Bash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
 		BF0C876A9885CF077370624F /* deviceio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deviceio.c; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 		BF0C886AFC15C6E29CD1CC76 /* regexlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regexlist.c; sourceTree = "<group>"; };
 		BF0C88BDB208157D135E54D9 /* deviceio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceio.h; sourceTree = "<group>"; };
 		BF0C899605B39AB4EE0E8EB8 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
+		BF0C8A6DF747BAD5959080C6 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
 		BF0C8ADD5834B5CB8DBDA3FE /* fatsort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fatsort.c; sourceTree = "<group>"; };
 		BF0C8AEC369568F073ADA8F7 /* stringlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringlist.h; sourceTree = "<group>"; };
 		BF0C8AF67C9A7A100C75894E /* options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = options.c; sourceTree = "<group>"; };
@@ -177,7 +179,6 @@
 		D04BA6ED38651224DB117A5A /* upload_symbols_to_appcenter.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = upload_symbols_to_appcenter.sh; sourceTree = "<group>"; };
 		D04BA6EF1954DCE80E539142 /* base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = base.xcconfig; sourceTree = "<group>"; };
 		D04BA70746DEEC3D30B43F81 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D04BA72AC9B57A1673C28B2E /* android-chrome-256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "android-chrome-256x256.png"; sourceTree = "<group>"; };
 		D04BA765138B5E1C512245BE /* Thanks.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Thanks.md; sourceTree = "<group>"; };
 		D04BA7A758026814667273DC /* convert_iconset_to_icns.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convert_iconset_to_icns.sh; sourceTree = "<group>"; };
 		D04BA7BD7B65B58A0DF438C7 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = file.lock; path = Gemfile.lock; sourceTree = "<group>"; };
@@ -520,7 +521,6 @@
 			isa = PBXGroup;
 			children = (
 				D04BA954319227829B646315 /* android-chrome-192x192.png */,
-				D04BA72AC9B57A1673C28B2E /* android-chrome-256x256.png */,
 				D04BA2D022B64A876CCA6BB7 /* apple-touch-icon.png */,
 				D04BA5488C8142D30E7D3EF9 /* browserconfig.xml */,
 				D04BA084F638725465234830 /* favicon-16x16.png */,
@@ -529,6 +529,8 @@
 				D04BA7E388B365A41C92E31B /* safari-pinned-tab.svg */,
 				D04BA5E208CBB8E28EE3FAFF /* site.webmanifest */,
 				D04BA33CFD58A1E9D35A2DFB /* demo */,
+				BF0C8A6DF747BAD5959080C6 /* favicon.ico */,
+				BF0C872454DB79FF845B3CBE /* android-chrome-256x256.png */,
 			);
 			path = public;
 			sourceTree = "<group>";

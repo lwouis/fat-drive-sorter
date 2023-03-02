@@ -6,7 +6,7 @@ set -exu
 export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib"
 
 currentDir="$(pwd)"
-size=16
+size=256
 
 function convert() {
   #  magick convert \
@@ -15,13 +15,11 @@ function convert() {
   #    -resize 24x24 \
   #    "resources/icons/window-controls/$1.svg" \
   #    "resources/icons/window-controls/$1-magik.png"
-  /Applications/Inkscape.app/Contents/Resources/bin/inkscape \
+  /Applications/Inkscape.app/Contents/MacOS/inkscape \
     -z \
     -w "$((size * 2))" -h "$((size * 2))" \
-    "$currentDir/resources/icons/window-controls/$1.svg" \
-    -e "$currentDir/resources/icons/window-controls/$1@2x.png"
+    "$currentDir/resources/icons/app/$1.svg" \
+    -o "$currentDir/resources/icons/app/$1@2x.png"
 }
 
-convert "close"
-convert "fullscreen"
-convert "minimize"
+convert "app"
