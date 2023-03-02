@@ -1,0 +1,38 @@
+﻿/* %@ is FatDriveSorter */
+"%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "%@ crashed last time you used it. Sending a crash report will help get the issue fixed";
+
+/* No comment provided by engineer. */
+"Directory (optional):" = "Directory (optional):";
+
+/* No comment provided by engineer. */
+"Do nothing" = "Do nothing";
+
+/* No comment provided by engineer. */
+"Don’t send" = "Don’t send";
+
+/* No comment provided by engineer. */
+"Drive:" = "Drive:";
+
+/* No comment provided by engineer. */
+"Focus selected window" = "Focus selected window";
+
+/* No comment provided by engineer. */
+"No drive detected" = "No drive detected";
+
+/* No comment provided by engineer. */
+"Order:" = "Order:";
+
+/* No comment provided by engineer. */
+"Remember my choice" = "Remember my choice";
+
+/* No comment provided by engineer. */
+"See current file order" = "See current file order";
+
+/* No comment provided by engineer. */
+"Send" = "Send";
+
+/* No comment provided by engineer. */
+"Send a crash report?" = "Send a crash report?";
+
+/* No comment provided by engineer. */
+"Sort" = "Sort";

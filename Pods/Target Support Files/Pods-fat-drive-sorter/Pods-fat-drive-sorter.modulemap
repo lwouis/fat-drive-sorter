@@ -1,0 +1,6 @@
+framework module Pods_fat_drive_sorter {
+  umbrella header "Pods-fat-drive-sorter-umbrella.h"
+
+  export *
+  module * { export * }
+}
