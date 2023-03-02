@@ -150,21 +150,15 @@
 		D04BA075E359F36C27CD5BAE /* package-lock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "package-lock.json"; sourceTree = "<group>"; };
 		D04BA084F638725465234830 /* favicon-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-16x16.png"; sourceTree = "<group>"; };
 		D04BA0AAAE82C72855DBBA26 /* update_appcast.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update_appcast.sh; sourceTree = "<group>"; };
-		D04BA0CE87BE264C52987ED1 /* 7 windows - 2 lines - wide window.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 windows - 2 lines - wide window.jpg"; sourceTree = "<group>"; };
 		D04BA0E071D2EDFDB9A20523 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D04BA0E1C5DBC07108AC2F54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D04BA0F5EB832B8E142B654B /* 4 windows - 1 line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4 windows - 1 line.jpg"; sourceTree = "<group>"; };
-		D04BA107C8B8FE7FF8536606 /* too many windows - 4 lines - paginated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "too many windows - 4 lines - paginated.jpg"; sourceTree = "<group>"; };
 		D04BA1232AFEEFE90D5CC827 /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		D04BA123744B0C27E9F54B05 /* codesign_sparkle_embedded_apps.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = codesign_sparkle_embedded_apps.sh; sourceTree = "<group>"; };
 		D04BA18724DC58FA95DB33DB /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = file.lock; path = Podfile.lock; sourceTree = "<group>"; };
 		D04BA18B55AA6C9EE41985D0 /* Contributing.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Contributing.md; sourceTree = "<group>"; };
 		D04BA1D80F4EEF2A91BAD29C /* release.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = release.config.js; sourceTree = "<group>"; };
-		D04BA1FC9022590D7AA02486 /* 1 window - 1 line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1 window - 1 line.jpg"; sourceTree = "<group>"; };
-		D04BA2C7B51F68651B3C60E2 /* 6 windows - 1 line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6 windows - 1 line.jpg"; sourceTree = "<group>"; };
 		D04BA2D022B64A876CCA6BB7 /* apple-touch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon.png"; sourceTree = "<group>"; };
 		D04BA2E723062A1DAC58618F /* setup_ci_pr.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup_ci_pr.sh; sourceTree = "<group>"; };
-		D04BA32F25860B686DFE818A /* 3 windows - 1 line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 windows - 1 line.jpg"; sourceTree = "<group>"; };
 		D04BA369B4D9FD6A13936F53 /* bare.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bare.html; sourceTree = "<group>"; };
 		D04BA3EF6656955B0B29C2CD /* other.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = other.md; sourceTree = "<group>"; };
 		D04BA4336B6004A0A99849AD /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
@@ -173,12 +167,9 @@
 		D04BA48E6F24E0948C4CB4F7 /* import_l10n_strings_from_poeditor.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = import_l10n_strings_from_poeditor.sh; sourceTree = "<group>"; };
 		D04BA4B5292629AA6B560216 /* package_and_notarize_release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package_and_notarize_release.sh; sourceTree = "<group>"; };
 		D04BA4D5DF349429527824A2 /* determine_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = determine_version.sh; sourceTree = "<group>"; };
-		D04BA4F23325560BC0BCDDB7 /* 7 windows - 2 lines - tall window.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 windows - 2 lines - tall window.jpg"; sourceTree = "<group>"; };
-		D04BA51D43775E57CE91154A /* 3 windows - 1 line - wide window.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 windows - 1 line - wide window.jpg"; sourceTree = "<group>"; };
 		D04BA5488C8142D30E7D3EF9 /* browserconfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = browserconfig.xml; sourceTree = "<group>"; };
 		D04BA55D1B2C8BFF61954466 /* generate_selfsigned_certificate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate_selfsigned_certificate.sh; sourceTree = "<group>"; };
 		D04BA59FD487D0DEBBA66A94 /* createicns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = createicns; sourceTree = "<group>"; };
-		D04BA5ABFA5457A86536E2E4 /* 5 windows - 1 line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5 windows - 1 line.jpg"; sourceTree = "<group>"; };
 		D04BA5D2FD6E26D82721C574 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		D04BA5E208CBB8E28EE3FAFF /* site.webmanifest */ = {isa = PBXFileReference; lastKnownFileType = file.webmanifest; path = site.webmanifest; sourceTree = "<group>"; };
 		D04BA62D5EACAAAD7BCD3E79 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
@@ -197,7 +188,6 @@
 		D04BA85F10205D5CDE8B34C4 /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
 		D04BA94A1695D4FF5337C84B /* import_certificate_into_main_keychain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = import_certificate_into_main_keychain.sh; sourceTree = "<group>"; };
 		D04BA954319227829B646315 /* android-chrome-192x192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "android-chrome-192x192.png"; sourceTree = "<group>"; };
-		D04BA9EF65B2E7AF9E3ADCA3 /* 2 windows - 1 line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2 windows - 1 line.jpg"; sourceTree = "<group>"; };
 		D04BAA127E73B3114B75098A /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		D04BAA5ECAE8BB8F8656DEDF /* update_contributors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update_contributors.sh; sourceTree = "<group>"; };
 		D04BAAB92261FC04854FDDE9 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -206,7 +196,6 @@
 		D04BAAF760E3A8A22BDA84D6 /* appcast.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
 		D04BAAF79737A0673502FEB5 /* AppCenterApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCenterApplication.h; sourceTree = "<group>"; };
 		D04BAB51808B6118EB00DFC7 /* mstile-150x150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mstile-150x150.png"; sourceTree = "<group>"; };
-		D04BAB6652494D7575057E86 /* 14 windows - 3 lines.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "14 windows - 3 lines.jpg"; sourceTree = "<group>"; };
 		D04BAB7714DEDEA0A53AC3ED /* main.scss */ = {isa = PBXFileReference; lastKnownFileType = file.scss; path = main.scss; sourceTree = "<group>"; };
 		D04BAC02D60EF22D9CC7D969 /* commitlint.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = commitlint.config.js; sourceTree = "<group>"; };
 		D04BAC6AFC7F06D1A567F27A /* replace_environment_variables_in_app.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = replace_environment_variables_in_app.sh; sourceTree = "<group>"; };
@@ -217,17 +206,14 @@
 		D04BAD6700415D6F7C8B2BEE /* travis.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = travis.sh; sourceTree = "<group>"; };
 		D04BAD7008ED1D9CBC147A75 /* pull_request_template.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
 		D04BAD7D8F3CC2C36C8769C6 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
-		D04BAD82F652C4ED5D8BF7AE /* 3 windows - 1 line - tall window.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3 windows - 1 line - tall window.jpg"; sourceTree = "<group>"; };
 		D04BAD98C2DCFE95458947D3 /* setup_local.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup_local.sh; sourceTree = "<group>"; };
 		D04BADB5AA570748C717D31A /* Changelog-bare.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Changelog-bare.md"; sourceTree = "<group>"; };
 		D04BADFEF9A8189ABC8BF5EE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		D04BAE1243C9B4BE3ED1B524 /* 7 windows - 2 lines - extra wide window.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7 windows - 2 lines - extra wide window.jpg"; sourceTree = "<group>"; };
 		D04BAE298D0D87E4E69A2054 /* default.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = default.html; sourceTree = "<group>"; };
 		D04BAE93A5854C501639C640 /* update_homebrew_cask.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update_homebrew_cask.sh; sourceTree = "<group>"; };
 		D04BAE94A2FD4D9B72830B43 /* favicon-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-32x32.png"; sourceTree = "<group>"; };
 		D04BAED450528DC3C28FABDE /* Changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
 		D04BAEF1D194C2379C9970F1 /* setup_ci_master.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup_ci_master.sh; sourceTree = "<group>"; };
-		D04BAF076A30A1BAFEDBEA66 /* 5 windows - 2 lines.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5 windows - 2 lines.jpg"; sourceTree = "<group>"; };
 		D04BAF1058D2599E6E8ABBA6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		D04BAF6F617FCA44D1F75B60 /* fat-drive-sorter.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "fat-drive-sorter.entitlements"; sourceTree = "<group>"; };
 		D04BAFA20F13FB588F6CCB81 /* bug_report.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = bug_report.md; sourceTree = "<group>"; };
@@ -445,27 +431,6 @@
 			path = codesign;
 			sourceTree = "<group>";
 		};
-		D04BA502DEE6E54E9987BAB7 /* windows-10 */ = {
-			isa = PBXGroup;
-			children = (
-				D04BA32F25860B686DFE818A /* 3 windows - 1 line.jpg */,
-				D04BAB6652494D7575057E86 /* 14 windows - 3 lines.jpg */,
-				D04BAD82F652C4ED5D8BF7AE /* 3 windows - 1 line - tall window.jpg */,
-				D04BA4F23325560BC0BCDDB7 /* 7 windows - 2 lines - tall window.jpg */,
-				D04BA2C7B51F68651B3C60E2 /* 6 windows - 1 line.jpg */,
-				D04BA107C8B8FE7FF8536606 /* too many windows - 4 lines - paginated.jpg */,
-				D04BA5ABFA5457A86536E2E4 /* 5 windows - 1 line.jpg */,
-				D04BA0F5EB832B8E142B654B /* 4 windows - 1 line.jpg */,
-				D04BA1FC9022590D7AA02486 /* 1 window - 1 line.jpg */,
-				D04BA9EF65B2E7AF9E3ADCA3 /* 2 windows - 1 line.jpg */,
-				D04BA51D43775E57CE91154A /* 3 windows - 1 line - wide window.jpg */,
-				D04BAF076A30A1BAFEDBEA66 /* 5 windows - 2 lines.jpg */,
-				D04BA0CE87BE264C52987ED1 /* 7 windows - 2 lines - wide window.jpg */,
-				D04BAE1243C9B4BE3ED1B524 /* 7 windows - 2 lines - extra wide window.jpg */,
-			);
-			path = "windows-10";
-			sourceTree = "<group>";
-		};
 		D04BA6251F309645757C6000 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,14 +533,6 @@
 			path = public;
 			sourceTree = "<group>";
 		};
-		D04BAAB62DCBD7AF93B7EF89 /* study-material */ = {
-			isa = PBXGroup;
-			children = (
-				D04BA502DEE6E54E9987BAB7 /* windows-10 */,
-			);
-			path = "study-material";
-			sourceTree = "<group>";
-		};
 		D04BAC2B70BC798C57B0B492 /* l10n */ = {
 			isa = PBXGroup;
 			children = (
@@ -588,7 +545,6 @@
 		D04BAD1F5F5D4427DEA16682 /* docs */ = {
 			isa = PBXGroup;
 			children = (
-				D04BAAB62DCBD7AF93B7EF89 /* study-material */,
 				D04BAADF01EB8FF8A15AECC6 /* Acknowledgments.md */,
 				D04BA812B8DCB915B8F4B915 /* Contributors.md */,
 				D04BAED450528DC3C28FABDE /* Changelog.md */,
