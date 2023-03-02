@@ -2,10 +2,10 @@
 "%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "%@ crashed last time you used it. Sending a crash report will help get the issue fixed";
 
 /* No comment provided by engineer. */
-"Directory (optional):" = "Directory (optional):";
+"Directories first" = "Directories first";
 
 /* No comment provided by engineer. */
-"Do nothing" = "Do nothing";
+"Directory (optional):" = "Directory (optional):";
 
 /* No comment provided by engineer. */
 "Don’t send" = "Don’t send";
@@ -14,7 +14,10 @@
 "Drive:" = "Drive:";
 
 /* No comment provided by engineer. */
-"Focus selected window" = "Focus selected window";
+"Files first" = "Files first";
+
+/* No comment provided by engineer. */
+"Mixed" = "Mixed";
 
 /* No comment provided by engineer. */
 "No drive detected" = "No drive detected";

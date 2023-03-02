@@ -279,9 +279,9 @@ enum Order: String, CaseIterable {
 
     var localizedString: String {
         switch self {
-            case .directoriesFirst: return NSLocalizedString("Focus selected window", comment: "")
-            case .filesFirst: return NSLocalizedString("Do nothing", comment: "")
-            case .mixed: return NSLocalizedString("Do nothing", comment: "")
+            case .directoriesFirst: return NSLocalizedString("Directories first", comment: "")
+            case .filesFirst: return NSLocalizedString("Files first", comment: "")
+            case .mixed: return NSLocalizedString("Mixed", comment: "")
         }
     }
 }

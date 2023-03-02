@@ -1,6 +1,6 @@
 # FatDriveSorter
 
-[![Screenshot](docs/public/demo/frontpage.jpg)](docs/public/demo/alt-tab)
+[![Screenshot](docs/public/demo/frontpage.jpg)](docs/public/demo/frontpage.jpg)
 
 **FatDriveSorter** helps you *actually* sort files on your FAT drives
 

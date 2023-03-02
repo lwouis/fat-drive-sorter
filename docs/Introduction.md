@@ -17,7 +17,9 @@ Some simple devices, such as MP3 players or hand-held consoles, display files wi
 ## Features
 
 * Enforce raw file order on your FAT drives
-* See the current raw file order on your FAT drives
+* See the current raw file order
+* Customize the sort order
+* Only sort a specific directory
 
 ## Installation
 
@@ -45,13 +47,9 @@ FatDriveSorter is available in: English
 * FatDriveSorter doesn’t send or receive any data without explicit user consent. It may ask the user to send a crash report after a crash for example, but it will never spy on the user.
 * FatDriveSorter tries to use as few resources as it can: CPU, memory, disk, etc. All images are compressed, FatDriveSorter is optimized to be as light as possible on the user resources.
 
-## Configuration
+## Using the embedded fatsort CLI
 
-Change the shortcut keys, switch to a Windows theme and more, using the Preferences window:
-
-| [![Screenshot1](public/demo/preferences-appearance.jpg)](public/demo/preferences-appearance.jpg) | [![Screenshot 2](public/demo/preferences-controls.jpg)](public/demo/preferences-controls.jpg) |
-| [![Screenshot3](public/demo/preferences-blacklist.jpg)](public/demo/preferences-blacklist.jpg) | [![Screenshot 4](public/demo/preferences-policies.jpg)](public/demo/preferences-policies.jpg) |
-| [![Screenshot5](public/demo/preferences-general.jpg)](public/demo/preferences-general.jpg) | |
+FatDriveSorter includes a built of [fatsort](https://fatsort.sourceforge.io/). It is located in the .app bundle, at `FatDriveSorter.app/Contents/MacOS/fatsort`. It can be called from the Terminal to do advanced sorting. You can call `fatsort -h` for to see the options.
 
 ## License
 
