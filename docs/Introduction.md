@@ -16,7 +16,7 @@ Some simple devices, such as MP3 players or hand-held consoles, display files wi
 
 ## Features
 
-* Enforce raw file order on your FAT drives
+* Enforce raw file order on your FAT drives (FAT12, FAT16, FAT32 and exFAT)
 * See the current raw file order
 * Customize the sort order
 * Only sort a specific directory
