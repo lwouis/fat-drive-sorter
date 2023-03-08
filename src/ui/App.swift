@@ -32,6 +32,7 @@ class App: AppCenterApplication, NSApplicationDelegate {
         #if !DEBUG
         PFMoveToApplicationsFolderIfNecessary()
         #endif
+        BackgroundWork.start()
         window = Window()
         loadMainMenuXib()
     }
