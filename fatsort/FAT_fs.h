@@ -62,7 +62,7 @@
 #define MAX_PATH_LEN 512
 
 // maximum filename length on exFAT
-#define MAX_EXFAT_FILENAME_LEN 255
+#define MAX_EXFAT_FILENAME_LEN (uint32_t) 255
 
 // maximum file len
 // (specification: file < 4GB which is

@@ -285,15 +285,15 @@ int32_t parseExFATClusterChain(struct sFileSystem *fs, struct sClusterChain *cha
 	uint32_t entries=0;
 	uint32_t expected_entries=0;
 	uint32_t r;
+	uint32_t nameLength=0;
 
 	struct sExFATDirEntry de;
 	struct sExFATDirEntrySet *des;
 	struct sExFATDirEntryList *del=NULL;
 
-	char name[MAX_PATH_LEN+1];
-	char str[31];
+	char utf16_filename[MAX_EXFAT_FILENAME_LEN*2+1];
+	char utf8_filename[MAX_EXFAT_FILENAME_LEN*4+1];
 	char *outptr, *inptr;
-	uint8_t nameLength=0;
 
 	size_t outcount=30;
 	size_t incount, iret;
@@ -304,7 +304,6 @@ int32_t parseExFATClusterChain(struct sFileSystem *fs, struct sClusterChain *cha
 
 	*reordered=0;
 
-	name[0]='\0';
 	while (chain != NULL) {
 		device_seekset(fs->device, getClusterOffset(fs, chain->cluster));
 		// fprintf(stderr, "cluster=%x;clusterOffset=%x\n", chain->cluster, getClusterOffset(fs, chain->cluster));
@@ -352,6 +351,12 @@ int32_t parseExFATClusterChain(struct sFileSystem *fs, struct sClusterChain *cha
 						return -1;
 					}
 					nameLength=de.entry.streamExtDirEntry.nameLen;
+					if (nameLength > MAX_EXFAT_FILENAME_LEN) {
+						myerror("Specified File name length in STEAM EXTENSION ENTRY is longer than %lu bytes (%lu bytes)!",
+								MAX_EXFAT_FILENAME_LEN, nameLength);
+						return -1;
+					}
+					
 					entries++;
 				} else if (!expected_entries) {
 					myerror("Secondary directory entries are not expected here (%u)!", ret);
@@ -370,46 +375,57 @@ int32_t parseExFATClusterChain(struct sFileSystem *fs, struct sClusterChain *cha
 					}
 					entries++;
 
-					// copy filename part to filename
-					outptr = &(str[0]);
-					str[0]='\0';
-					inptr=&(de.entry.FileNameExtDirEntry.filename[0]);
-					if (entries == expected_entries) { // last entry, so file name part is shorter
-						incount = 2 * (nameLength - (entries - 3) * 15);
-					} else {
-						incount=30;
+					if ((entries - 3) * 15 > nameLength) {
+						myerror("%u FILE NAME EXTENSION entries lead to filename length of more than %ul which is greater than specified in FILE STREAM EXTENSION entry!",
+								entries - 2, nameLength);
+						return -1;
 					}
 
-					//printf("incount: %d, length: %d\n", incount, nameLength);
-					outcount=MAX_PATH_LEN;
+					// copy filename part to filename
+					memcpy(utf16_filename+(entries - 3)*30,de.entry.FileNameExtDirEntry.filename, 30);
 
-					/*printf("file name part: " \
+					/*
+					printf("file name part: " \
 						"%02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx " \
 						"%02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx " \
 						"%02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx\n",
-						inptr[0], inptr[1], inptr[2], inptr[3], inptr[4],
-						inptr[5], inptr[6], inptr[7], inptr[8], inptr[9],
-						inptr[10], inptr[11], inptr[12], inptr[13], inptr[14],
-						inptr[15], inptr[16], inptr[17], inptr[18], inptr[19],
-						inptr[20], inptr[21], inptr[22], inptr[23], inptr[24],
-						inptr[25], inptr[26], inptr[27], inptr[28], inptr[29]
-					);*/
-
-					while (incount != 0) {
-				                if ((iret=iconv(fs->cd, &inptr, &incount, &outptr, &outcount)) == (size_t)-1) {
-							stderror();
-				                        myerror("iconv failed! %d", iret);
-							return -1;
-				                }
-				        }
-					outptr[0]='\0';
-
-					strncat(name, str, 31);
+						de.entry.FileNameExtDirEntry.filename[0], de.entry.FileNameExtDirEntry.filename[1],
+						de.entry.FileNameExtDirEntry.filename[2], de.entry.FileNameExtDirEntry.filename[3],
+						de.entry.FileNameExtDirEntry.filename[4], de.entry.FileNameExtDirEntry.filename[5],
+						de.entry.FileNameExtDirEntry.filename[6], de.entry.FileNameExtDirEntry.filename[7],
+						de.entry.FileNameExtDirEntry.filename[8], de.entry.FileNameExtDirEntry.filename[9],
+						de.entry.FileNameExtDirEntry.filename[10], de.entry.FileNameExtDirEntry.filename[11],
+						de.entry.FileNameExtDirEntry.filename[12], de.entry.FileNameExtDirEntry.filename[13],
+						de.entry.FileNameExtDirEntry.filename[14], de.entry.FileNameExtDirEntry.filename[15],
+						de.entry.FileNameExtDirEntry.filename[16], de.entry.FileNameExtDirEntry.filename[17],
+						de.entry.FileNameExtDirEntry.filename[18], de.entry.FileNameExtDirEntry.filename[19],
+						de.entry.FileNameExtDirEntry.filename[20], de.entry.FileNameExtDirEntry.filename[21],
+						de.entry.FileNameExtDirEntry.filename[22], de.entry.FileNameExtDirEntry.filename[23],
+						de.entry.FileNameExtDirEntry.filename[24], de.entry.FileNameExtDirEntry.filename[25],
+						de.entry.FileNameExtDirEntry.filename[26], de.entry.FileNameExtDirEntry.filename[27],
+						de.entry.FileNameExtDirEntry.filename[28], de.entry.FileNameExtDirEntry.filename[29]
+					);
+					*/
 
 					// we are done here
 					if (entries == expected_entries) {
 
-						des=newExFATDirEntrySet(name, del, entries);
+						// convert utf-16 string form FILE NAME EXTENSION entries to utf-18 string in current locale
+						incount = nameLength*2;
+						outcount = MAX_EXFAT_FILENAME_LEN*4;
+						inptr = &(utf16_filename[0]);
+						outptr = &(utf8_filename[0]);
+						while (incount != 0) {
+						        if ((iret=iconv(fs->cd, &inptr, &incount, &outptr, &outcount)) == (size_t)-1) {
+								stderror();
+						                myerror("iconv failed! %d", iret);
+								return -1;
+						        }
+						}
+						outptr[0]='\0';						
+						
+						
+						des=newExFATDirEntrySet(utf8_filename, del, entries);
 						if (!des) {
 							myerror("Could not create exFAT directory entry set");
 							return -1;
@@ -433,7 +449,7 @@ int32_t parseExFATClusterChain(struct sFileSystem *fs, struct sClusterChain *cha
 
 						(*direntrysets)++;
 						entries=0;
-						name[0]='\0';
+
 					}
 				} else if (entries >= expected_entries) {
 					myerror("Too many file name extension directory entries!");
