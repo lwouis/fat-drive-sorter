@@ -1,5 +1,12 @@
 # Release notes
 
+## [1.1.2](https://github.com/lwouis/fat-drive-sorter/compare/v1.1.1...v1.1.2) (2023-04-27)
+
+
+### Bug Fixes
+
+* sort using natural order (e.g. 'track 10' comes after 'track 2') ([80eff28](https://github.com/lwouis/fat-drive-sorter/commit/80eff28))
+
 ## [1.1.1](https://github.com/lwouis/fat-drive-sorter/compare/v1.1.0...v1.1.1) (2023-03-12)
 
 
