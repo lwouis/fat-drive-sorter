@@ -197,7 +197,7 @@ class Window: NSWindow {
     }
 
     static func fatsortFlagsFromUiSettings() -> String {
-        var args = [String]()
+        var args = ["-n"]
         if window.directoryButton.title != window.defaultDirectoryTitle {
             args.append("-D \(window.directoryButton.title)")
         }
