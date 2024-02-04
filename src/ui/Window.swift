@@ -25,8 +25,7 @@ class Window: NSWindow {
     }
 
     private func updateDrives() {
-        let keys: Set<URLResourceKey> = [.volumeLocalizedNameKey, .volumeIsRemovableKey, .volumeIsEjectableKey]
-        drives = getDrives(keys)
+        drives = getDrives()
         directoryButton.isEnabled = !drives.isEmpty
         listButton.isEnabled = !drives.isEmpty
         sortButton.isEnabled = !drives.isEmpty
@@ -50,15 +49,18 @@ class Window: NSWindow {
         }
     }
 
-    private func getDrives(_ keys: Set<URLResourceKey>) -> [Drive] {
+    private func getDrives() -> [Drive] {
+        let keys: Set<URLResourceKey> = [.volumeLocalizedNameKey, .volumeLocalizedFormatDescriptionKey]
         return FileManager.default
                 .mountedVolumeURLs(includingResourceValuesForKeys: Array(keys), options: [.skipHiddenVolumes])!
                 .compactMap {
                     let values = try? $0.resourceValues(forKeys: keys)
                     let name = values?.volumeLocalizedName
-                    let isRemovable = values?.volumeIsRemovable ?? false
-                    let isEjectable = values?.volumeIsEjectable ?? false
-                    if isRemovable && isEjectable, let name = name,
+                    let format = values?.volumeLocalizedFormatDescription
+                    // we can't check if the drive is "external"; some external drives are not ejectable
+                    // we can only check that it's a FAT drive
+                    if format?.contains("FAT") == true,
+                       let name = name,
                        let daDisk = DADiskCreateFromVolumePath(kCFAllocatorDefault, daSession, $0 as CFURL),
                        let bsdName = DADiskGetBSDName(daDisk) {
                         let bsdNode = "/dev/" + String(cString: bsdName)
