@@ -25,12 +25,6 @@ Some simple devices, such as MP3 players or hand-held consoles, display files wi
 
 [**Download the latest release**]({{ site.github.latest_release.assets[0].browser_download_url }})
 
-Alternatively, you can use [homebrew](https://brew.sh/):
-
-| Homebrew 2.7 and above                 | Homebrew 2.5 and 2.6             | Homebrew 2.4 and below               |
-|----------------------------------------|----------------------------------|--------------------------------------|
-| `brew install --cask fat-drive-sorter` | `brew install fat-drive-sorter`  | `brew cask install fat-drive-sorter` |
-
 ## Compatibility
 
 * __macOS version:__ from 10.12 to latest

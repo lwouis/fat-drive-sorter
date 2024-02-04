@@ -30,4 +30,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: lwouis/fat-drive-sorter
-after_deploy: scripts/update_homebrew_cask.sh
+#after_deploy: scripts/update_homebrew_cask.sh
