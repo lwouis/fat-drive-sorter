@@ -115,6 +115,7 @@
 		BF0C874C9F62B5F4F378593B /* Bash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
 		BF0C8819E5B69BC1A82722D0 /* mallocv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mallocv.h; sourceTree = "<group>"; };
 		BF0C89398B49D3A3DA8B4C9B /* entrylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entrylist.h; sourceTree = "<group>"; };
+		BF0C89569E880D18C82D2456 /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
 		BF0C897B1688EB16334E0D9D /* natstrcmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = natstrcmp.h; sourceTree = "<group>"; };
 		BF0C899605B39AB4EE0E8EB8 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
 		BF0C8A4607E3FFDF9D73770A /* errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
@@ -393,6 +394,7 @@
 			children = (
 				D04BAD7008ED1D9CBC147A75 /* pull_request_template.md */,
 				D04BA7A56A2009957C939159 /* ISSUE_TEMPLATE */,
+				BF0C89569E880D18C82D2456 /* FUNDING.yml */,
 			);
 			path = .github;
 			sourceTree = "<group>";
