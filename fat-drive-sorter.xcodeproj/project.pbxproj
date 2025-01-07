@@ -93,7 +93,9 @@
 		BF0C801842F94ED78EC2D8C5 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
 		BF0C80227BE9CF0A3EC25E33 /* regexlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regexlist.c; sourceTree = "<group>"; };
 		BF0C80412D8B83C1A717454C /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		BF0C804577B2267C53A5F1FD /* ci_cd.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = ci_cd.yml; sourceTree = "<group>"; };
 		BF0C80D8A8D226327D67E757 /* sig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sig.h; sourceTree = "<group>"; };
+		BF0C80E662A742AF214396E4 /* override_tags_on_poeditor.ts */ = {isa = PBXFileReference; lastKnownFileType = file.ts; path = override_tags_on_poeditor.ts; sourceTree = "<group>"; };
 		BF0C8122FBFE4C74CD43C374 /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = InfoPlist.strings; sourceTree = "<group>"; };
 		BF0C8147A9A2202FDCC55F0D /* deviceio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceio.h; sourceTree = "<group>"; };
 		BF0C8149F682F9CE2872D3EB /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
@@ -103,37 +105,56 @@
 		BF0C82C0C60ACB3FC977B7BD /* FAT_fs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FAT_fs.c; sourceTree = "<group>"; };
 		BF0C82EE7916B432F263DD12 /* deviceio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deviceio.c; sourceTree = "<group>"; };
 		BF0C82F0CB772318B8D379C5 /* fatsort-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "fatsort-release.xcconfig"; sourceTree = "<group>"; };
+		BF0C82FC4E3C1802341BA061 /* build_app.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_app.sh; sourceTree = "<group>"; };
 		BF0C833D471343CEA3DEFE56 /* icon_512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_512x512@2x.png"; sourceTree = "<group>"; };
 		BF0C839897CE1525CFCF32EC /* endianness.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = endianness.c; sourceTree = "<group>"; };
 		BF0C83A7D2259F06F8322D02 /* BackgroundWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundWork.swift; sourceTree = "<group>"; };
+		BF0C84098EBF7A3CA15C0970 /* determine_next_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = determine_next_version.sh; sourceTree = "<group>"; };
 		BF0C841E38E8681A6F1B2BCE /* regexlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regexlist.h; sourceTree = "<group>"; };
+		BF0C842A06EC2488C74F840C /* convert_svg_to_png.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convert_svg_to_png.sh; sourceTree = "<group>"; };
 		BF0C843C2EDF4EF3A7A2C64A /* app.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; path = app.svg; sourceTree = "<group>"; };
+		BF0C848C356EC0CEAB7F47AE /* swiftformat.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = swiftformat.js; sourceTree = "<group>"; };
 		BF0C84E11784B3B0900D0963 /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app.icns; sourceTree = "<group>"; };
+		BF0C84E488D1B85993D61762 /* add_missing_terms_on_poeditor.ts */ = {isa = PBXFileReference; lastKnownFileType = file.ts; path = add_missing_terms_on_poeditor.ts; sourceTree = "<group>"; };
 		BF0C84F69B7C5E561192E1D5 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
 		BF0C84FF21DCF9303D4CA6B7 /* errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = errors.c; sourceTree = "<group>"; };
 		BF0C851790CC7BF4E58DF921 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
 		BF0C851FA46658A1CC8F4B9B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		BF0C8552A4C2234B6CDE9035 /* sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sort.c; sourceTree = "<group>"; };
+		BF0C8556EE8046390937FF60 /* run_tests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run_tests.sh; sourceTree = "<group>"; };
 		BF0C85BF98E2662884217021 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
-		BF0C86370093A080DD5974D8 /* convert_svg_to_png.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convert_svg_to_png.sh; sourceTree = "<group>"; };
 		BF0C864CF1A60DD9A7016580 /* DebugProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugProfile.swift; sourceTree = "<group>"; };
 		BF0C867D52E876FEC34EC57D /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = Localizable.strings; sourceTree = "<group>"; };
+		BF0C86870B28F9E66CBC5542 /* extract_l10n_strings.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = extract_l10n_strings.sh; sourceTree = "<group>"; };
 		BF0C868CEE54D475D4EC9F92 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
 		BF0C86C6046B8551FFACF524 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		BF0C871650C0BA3F7AA862D9 /* poeditor.ts */ = {isa = PBXFileReference; lastKnownFileType = file.ts; path = poeditor.ts; sourceTree = "<group>"; };
 		BF0C872454DB79FF845B3CBE /* android-chrome-256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "android-chrome-256x256.png"; sourceTree = "<group>"; };
 		BF0C873DA88588D8BD0CD6C0 /* clusterchain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clusterchain.c; sourceTree = "<group>"; };
 		BF0C874C9F62B5F4F378593B /* Bash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bash.swift; sourceTree = "<group>"; };
 		BF0C87766D181B9F89DFFE22 /* it */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = it; path = InfoPlist.strings; sourceTree = "<group>"; };
+		BF0C87AB64371D43C4FE8E09 /* override_contexts_on_poeditor.ts */ = {isa = PBXFileReference; lastKnownFileType = file.ts; path = override_contexts_on_poeditor.ts; sourceTree = "<group>"; };
 		BF0C8819E5B69BC1A82722D0 /* mallocv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mallocv.h; sourceTree = "<group>"; };
+		BF0C88C7EEC04B1508CD17ED /* codesign_sparkle_embedded_apps.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = codesign_sparkle_embedded_apps.sh; sourceTree = "<group>"; };
+		BF0C88ED78ADFC7FFA1CAA7E /* l10n.ts */ = {isa = PBXFileReference; lastKnownFileType = file.ts; path = l10n.ts; sourceTree = "<group>"; };
+		BF0C88F9165A5C5377617751 /* git.ts */ = {isa = PBXFileReference; lastKnownFileType = file.ts; path = git.ts; sourceTree = "<group>"; };
 		BF0C89398B49D3A3DA8B4C9B /* entrylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entrylist.h; sourceTree = "<group>"; };
 		BF0C89569E880D18C82D2456 /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		BF0C8963C578B1A8244265F1 /* google_translate_all_terms_locally.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = google_translate_all_terms_locally.py; sourceTree = "<group>"; };
+		BF0C8970CB910B6625CD1D5C /* convert_font_to_png.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convert_font_to_png.sh; sourceTree = "<group>"; };
 		BF0C897B1688EB16334E0D9D /* natstrcmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = natstrcmp.h; sourceTree = "<group>"; };
 		BF0C899605B39AB4EE0E8EB8 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512x512.png; sourceTree = "<group>"; };
+		BF0C89A7C9841EB5C6A5719F /* convert_iconset_to_icns.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convert_iconset_to_icns.sh; sourceTree = "<group>"; };
 		BF0C8A4607E3FFDF9D73770A /* errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
+		BF0C8A4DC2CE7650DFDFC7B4 /* createicns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = createicns; sourceTree = "<group>"; };
 		BF0C8A6DF747BAD5959080C6 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
 		BF0C8B39381BA88F1FD193EC /* fatsort-base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "fatsort-base.xcconfig"; sourceTree = "<group>"; };
+		BF0C8B740E7CF95863217A1C /* install_swiftformat.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = install_swiftformat.js; sourceTree = "<group>"; };
+		BF0C8B85B1D82B98AF70CDEE /* upload_translations_to_poeditor.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = upload_translations_to_poeditor.sh; sourceTree = "<group>"; };
 		BF0C8BE60EF23D10F0623708 /* Sysctl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sysctl.swift; sourceTree = "<group>"; };
 		BF0C8BECAEB2B93C27086ED8 /* sig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sig.c; sourceTree = "<group>"; };
+		BF0C8C06CE0054E4F7D37FFC /* print_env.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = print_env.sh; sourceTree = "<group>"; };
+		BF0C8C22C7377B397FBDFD6A /* notarytool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notarytool; sourceTree = "<group>"; };
 		BF0C8D4F2C5BBB2AB0709794 /* stringlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringlist.h; sourceTree = "<group>"; };
 		BF0C8D994416E655FA1FA808 /* entrylist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entrylist.c; sourceTree = "<group>"; };
 		BF0C8DCF67091C96ED88F381 /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
@@ -143,7 +164,10 @@
 		BF0C8E18BE0BC99E1571E8CD /* natstrcmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = natstrcmp.c; sourceTree = "<group>"; };
 		BF0C8E3B2780AE5ADD01BBE3 /* stringlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stringlist.c; sourceTree = "<group>"; };
 		BF0C8E45F2A5038E7490F695 /* it */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = it; path = Localizable.strings; sourceTree = "<group>"; };
+		BF0C8EA1BF19405448C375DD /* import_l10n_strings_from_poeditor.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = import_l10n_strings_from_poeditor.sh; sourceTree = "<group>"; };
+		BF0C8EE6DF65821E5DEC57E5 /* xcbeautify */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xcbeautify; sourceTree = "<group>"; };
 		BF0C8EF4F333588D77706CE2 /* mallocv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mallocv.c; sourceTree = "<group>"; };
+		BF0C8F1FEFEA1D6443DF2153 /* subset_font.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = subset_font.sh; sourceTree = "<group>"; };
 		BF0C8F2D9ABA73AEC7298C8C /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		BF0C8F511FE0E78F79897E78 /* clusterchain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clusterchain.h; sourceTree = "<group>"; };
 		BF0C8F6565D0661694319F61 /* fatsort-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "fatsort-debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +178,6 @@
 		D04BA0E071D2EDFDB9A20523 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D04BA0E1C5DBC07108AC2F54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D04BA1232AFEEFE90D5CC827 /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
-		D04BA123744B0C27E9F54B05 /* codesign_sparkle_embedded_apps.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = codesign_sparkle_embedded_apps.sh; sourceTree = "<group>"; };
 		D04BA18724DC58FA95DB33DB /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = file.lock; path = Podfile.lock; sourceTree = "<group>"; };
 		D04BA18B55AA6C9EE41985D0 /* Contributing.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Contributing.md; sourceTree = "<group>"; };
 		D04BA1D80F4EEF2A91BAD29C /* release.config.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = release.config.js; sourceTree = "<group>"; };
@@ -165,12 +188,9 @@
 		D04BA4336B6004A0A99849AD /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
 		D04BA459034C1885CA43A807 /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = "<group>"; };
 		D04BA48BC82D3060C3A1AB11 /* AppCenterApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCenterApplication.m; sourceTree = "<group>"; };
-		D04BA48E6F24E0948C4CB4F7 /* import_l10n_strings_from_poeditor.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = import_l10n_strings_from_poeditor.sh; sourceTree = "<group>"; };
 		D04BA4B5292629AA6B560216 /* package_and_notarize_release.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package_and_notarize_release.sh; sourceTree = "<group>"; };
-		D04BA4D5DF349429527824A2 /* determine_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = determine_version.sh; sourceTree = "<group>"; };
 		D04BA5488C8142D30E7D3EF9 /* browserconfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = browserconfig.xml; sourceTree = "<group>"; };
 		D04BA55D1B2C8BFF61954466 /* generate_selfsigned_certificate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate_selfsigned_certificate.sh; sourceTree = "<group>"; };
-		D04BA59FD487D0DEBBA66A94 /* createicns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = createicns; sourceTree = "<group>"; };
 		D04BA5D2FD6E26D82721C574 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		D04BA5E208CBB8E28EE3FAFF /* site.webmanifest */ = {isa = PBXFileReference; lastKnownFileType = file.webmanifest; path = site.webmanifest; sourceTree = "<group>"; };
 		D04BA62D5EACAAAD7BCD3E79 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
@@ -179,11 +199,9 @@
 		D04BA6EF1954DCE80E539142 /* base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = base.xcconfig; sourceTree = "<group>"; };
 		D04BA70746DEEC3D30B43F81 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D04BA765138B5E1C512245BE /* Thanks.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Thanks.md; sourceTree = "<group>"; };
-		D04BA7A758026814667273DC /* convert_iconset_to_icns.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = convert_iconset_to_icns.sh; sourceTree = "<group>"; };
 		D04BA7BD7B65B58A0DF438C7 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = file.lock; path = Gemfile.lock; sourceTree = "<group>"; };
 		D04BA7E388B365A41C92E31B /* safari-pinned-tab.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; path = "safari-pinned-tab.svg"; sourceTree = "<group>"; };
 		D04BA812B8DCB915B8F4B915 /* Contributors.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Contributors.md; sourceTree = "<group>"; };
-		D04BA81B25C166EFB3223639 /* extract_l10n_strings.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = extract_l10n_strings.sh; sourceTree = "<group>"; };
 		D04BA82F792DF53958D92572 /* FatDriveSorter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FatDriveSorter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04BA85F10205D5CDE8B34C4 /* _config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = _config.yml; sourceTree = "<group>"; };
 		D04BA94A1695D4FF5337C84B /* import_certificate_into_main_keychain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = import_certificate_into_main_keychain.sh; sourceTree = "<group>"; };
@@ -203,14 +221,11 @@
 		D04BAD2A5EFA477F1BC436B4 /* import_certificate_into_new_keychain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = import_certificate_into_new_keychain.sh; sourceTree = "<group>"; };
 		D04BAD40CE2D3A8AAC3819D0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D04BAD65AA870A49D2F89DBC /* ensure_generated_files_are_up_to_date.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ensure_generated_files_are_up_to_date.sh; sourceTree = "<group>"; };
-		D04BAD6700415D6F7C8B2BEE /* travis.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = travis.sh; sourceTree = "<group>"; };
 		D04BAD7008ED1D9CBC147A75 /* pull_request_template.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = pull_request_template.md; sourceTree = "<group>"; };
-		D04BAD7D8F3CC2C36C8769C6 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		D04BAD98C2DCFE95458947D3 /* setup_local.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup_local.sh; sourceTree = "<group>"; };
 		D04BADB5AA570748C717D31A /* Changelog-bare.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Changelog-bare.md"; sourceTree = "<group>"; };
 		D04BADFEF9A8189ABC8BF5EE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D04BAE298D0D87E4E69A2054 /* default.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = default.html; sourceTree = "<group>"; };
-		D04BAE93A5854C501639C640 /* update_homebrew_cask.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update_homebrew_cask.sh; sourceTree = "<group>"; };
 		D04BAE94A2FD4D9B72830B43 /* favicon-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favicon-32x32.png"; sourceTree = "<group>"; };
 		D04BAED450528DC3C28FABDE /* Changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
 		D04BAEF1D194C2379C9970F1 /* setup_ci_master.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup_ci_master.sh; sourceTree = "<group>"; };
@@ -302,6 +317,36 @@
 			path = it.lproj;
 			sourceTree = "<group>";
 		};
+		BF0C81962E11876E63EF7F96 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C88F9165A5C5377617751 /* git.ts */,
+				BF0C88ED78ADFC7FFA1CAA7E /* l10n.ts */,
+				BF0C871650C0BA3F7AA862D9 /* poeditor.ts */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		BF0C844DA35D3FDC2F9FAF9C /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C804577B2267C53A5F1FD /* ci_cd.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		BF0C8489488742CDF291548A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C8A4DC2CE7650DFDFC7B4 /* createicns */,
+				BF0C8F1FEFEA1D6443DF2153 /* subset_font.sh */,
+				BF0C842A06EC2488C74F840C /* convert_svg_to_png.sh */,
+				BF0C8970CB910B6625CD1D5C /* convert_font_to_png.sh */,
+				BF0C89A7C9841EB5C6A5719F /* convert_iconset_to_icns.sh */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		BF0C86C288D4FD8F92D3C7DB /* app */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +387,20 @@
 			path = "api-wrappers";
 			sourceTree = "<group>";
 		};
+		BF0C89B53FB084E970874A1B /* l10n */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C86870B28F9E66CBC5542 /* extract_l10n_strings.sh */,
+				BF0C80E662A742AF214396E4 /* override_tags_on_poeditor.ts */,
+				BF0C84E488D1B85993D61762 /* add_missing_terms_on_poeditor.ts */,
+				BF0C87AB64371D43C4FE8E09 /* override_contexts_on_poeditor.ts */,
+				BF0C8B85B1D82B98AF70CDEE /* upload_translations_to_poeditor.sh */,
+				BF0C8EA1BF19405448C375DD /* import_l10n_strings_from_poeditor.sh */,
+				BF0C8963C578B1A8244265F1 /* google_translate_all_terms_locally.py */,
+			);
+			path = l10n;
+			sourceTree = "<group>";
+		};
 		BF0C8C808EE73416AB64EEB9 /* fr.lproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,7 +427,6 @@
 				D04BAD40CE2D3A8AAC3819D0 /* .gitignore */,
 				D04BA0E1C5DBC07108AC2F54 /* README.md */,
 				D04BAD1F5F5D4427DEA16682 /* docs */,
-				D04BAD7D8F3CC2C36C8769C6 /* .travis.yml */,
 				D04BA1D80F4EEF2A91BAD29C /* release.config.js */,
 				D04BAC02D60EF22D9CC7D969 /* commitlint.config.js */,
 				D04BA4336B6004A0A99849AD /* package.json */,
@@ -434,6 +492,7 @@
 				D04BAD7008ED1D9CBC147A75 /* pull_request_template.md */,
 				D04BA7A56A2009957C939159 /* ISSUE_TEMPLATE */,
 				BF0C89569E880D18C82D2456 /* FUNDING.yml */,
+				BF0C844DA35D3FDC2F9FAF9C /* workflows */,
 			);
 			path = .github;
 			sourceTree = "<group>";
@@ -455,6 +514,7 @@
 				D04BA2E723062A1DAC58618F /* setup_ci_pr.sh */,
 				D04BAEF1D194C2379C9970F1 /* setup_ci_master.sh */,
 				D04BAD98C2DCFE95458947D3 /* setup_local.sh */,
+				BF0C88C7EEC04B1508CD17ED /* codesign_sparkle_embedded_apps.sh */,
 			);
 			path = codesign;
 			sourceTree = "<group>";
@@ -475,21 +535,23 @@
 			children = (
 				D04BA4B5292629AA6B560216 /* package_and_notarize_release.sh */,
 				D04BAC6AFC7F06D1A567F27A /* replace_environment_variables_in_app.sh */,
-				D04BAE93A5854C501639C640 /* update_homebrew_cask.sh */,
 				D04BA0AAAE82C72855DBBA26 /* update_appcast.sh */,
-				D04BA123744B0C27E9F54B05 /* codesign_sparkle_embedded_apps.sh */,
-				D04BAD6700415D6F7C8B2BEE /* travis.sh */,
-				D04BA81B25C166EFB3223639 /* extract_l10n_strings.sh */,
 				D04BA4FB0047656BEA21F1BE /* codesign */,
-				D04BA48E6F24E0948C4CB4F7 /* import_l10n_strings_from_poeditor.sh */,
 				D04BAA5ECAE8BB8F8656DEDF /* update_contributors.sh */,
 				D04BAD65AA870A49D2F89DBC /* ensure_generated_files_are_up_to_date.sh */,
-				D04BA4D5DF349429527824A2 /* determine_version.sh */,
 				D04BAAE6E6823304D66B74F8 /* update_website.sh */,
-				D04BA7A758026814667273DC /* convert_iconset_to_icns.sh */,
 				D04BA6ED38651224DB117A5A /* upload_symbols_to_appcenter.sh */,
-				D04BA59FD487D0DEBBA66A94 /* createicns */,
-				BF0C86370093A080DD5974D8 /* convert_svg_to_png.sh */,
+				BF0C8EE6DF65821E5DEC57E5 /* xcbeautify */,
+				BF0C81962E11876E63EF7F96 /* utils */,
+				BF0C848C356EC0CEAB7F47AE /* swiftformat.js */,
+				BF0C8556EE8046390937FF60 /* run_tests.sh */,
+				BF0C8C06CE0054E4F7D37FFC /* print_env.sh */,
+				BF0C8C22C7377B397FBDFD6A /* notarytool */,
+				BF0C89B53FB084E970874A1B /* l10n */,
+				BF0C8B740E7CF95863217A1C /* install_swiftformat.js */,
+				BF0C84098EBF7A3CA15C0970 /* determine_next_version.sh */,
+				BF0C82FC4E3C1802341BA061 /* build_app.sh */,
+				BF0C8489488742CDF291548A /* assets */,
 			);
 			path = scripts;
 			sourceTree = "<group>";
@@ -730,7 +792,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "scripts/codesign_sparkle_embedded_apps.sh\n";
+			shellScript = "scripts/codesign/codesign_sparkle_embedded_apps.sh\n";
 			showEnvVarsInLog = 0;
 		};
 		5968B81A43F20B6ECD92C7F7 /* [CP] Check Pods Manifest.lock */ = {

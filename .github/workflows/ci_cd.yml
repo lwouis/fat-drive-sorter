@@ -1,0 +1,67 @@
+on:
+  push:
+    branches:
+      - master
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  APPCENTER_SECRET: ${{ secrets.APPCENTER_SECRET }}
+  APPCENTER_TOKEN: ${{ secrets.APPCENTER_TOKEN }}
+  APPLE_ID: ${{ secrets.APPLE_ID }}
+  APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+  APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+  APPLE_P12_CERTIFICATE: ${{ secrets.APPLE_P12_CERTIFICATE }}
+  FEEDBACK_TOKEN: ${{ secrets.FEEDBACK_TOKEN }}
+  NETLIFY_WEBHOOK: ${{ secrets.NETLIFY_WEBHOOK }}
+  SPARKLE_ED_PRIVATE_KEY: ${{ secrets.SPARKLE_ED_PRIVATE_KEY }}
+  GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+  GITHUB_EVENT_AFTER: ${{ github.event.after }}
+  BUILD_DIR: ${{ github.workspace }}
+  XCODE_BUILD_PATH: DerivedData/Build/Products/Release
+  VERSION_FILE: VERSION.txt
+  APP_NAME: FatDriveSorter
+jobs:
+  build:
+    runs-on: macos-13 # Intel VM; see https://github.com/actions/runner-images/tree/main
+    environment: production
+    steps:
+      #      - env:
+      #          GITHUB_CONTEXT: ${{ toJSON(github) }}
+      #        run: echo "$GITHUB_CONTEXT"
+      - id: pre-checkout
+        env:
+          COMMITS: ${{ toJson(github.event.commits) }}
+        run: |
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            COUNT=$(( $(echo "$COMMITS" | jq length) + 1 ))
+          else
+            COUNT=1
+          fi
+          echo "fetch-depth=$COUNT" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: ${{ steps.pre-checkout.outputs.fetch-depth }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: sudo xcode-select -s /Applications/Xcode_14.2.app/Contents/Developer
+      - run: scripts/print_env.sh
+      - run: npm ci
+      - run: npx commitlint --from "$GITHUB_EVENT_BEFORE" --to "$GITHUB_EVENT_AFTER" --verbose
+      - run: scripts/ensure_generated_files_are_up_to_date.sh
+      - run: scripts/determine_next_version.sh
+      - run: scripts/replace_environment_variables_in_app.sh
+      - run: scripts/codesign/setup_ci_master.sh
+#      - run: scripts/run_tests.sh
+      - run: scripts/build_app.sh
+      - run: scripts/package_and_notarize_release.sh
+      - run: scripts/upload_symbols_to_appcenter.sh
+      - run: scripts/update_appcast.sh
+      - run: npx semantic-release
+      - id: set_tag_name
+        run: echo "tag_name=v"$(cat $VERSION_FILE)"" >> "$GITHUB_OUTPUT"
+      - uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.set_tag_name.outputs.tag_name }}
+          files: ${{ env.XCODE_BUILD_PATH }}/*.zip
+      - run: scripts/update_website.sh
