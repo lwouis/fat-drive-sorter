@@ -6,4 +6,7 @@ They helped [develop the app](https://github.com/lwouis/fat-drive-sorter/graphs/
 
 They helped [localize the app](https://poeditor.com/join/project/TTqkcdPO9V):
 
+* Heimz Nossler
 * lwouis
+* Philippe ZIESCH
+* TheAznCoderPro
