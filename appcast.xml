@@ -5,6 +5,20 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.2.0</title>
+      <pubDate>Tue, 07 Jan 2025 17:45:45 +0000</pubDate>
+      <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://fat-drive-sorter.netlify.app/changelog-bare</sparkle:releaseNotesLink>
+      <enclosure
+        url="https://github.com/lwouis/fat-drive-sorter/releases/download/v1.2.0/FatDriveSorter-1.2.0.zip"
+        sparkle:version="1.2.0"
+        sparkle:shortVersionString="1.2.0"
+        sparkle:edSignature="nVSqbqCAZf2fzH1F3SE31fNFXR0ZahL+WEUu7MMeeDqBdnpBetyUc8inPm9j3GDS26283imSACorwHyN4dwCCQ==" length="7018402"
+        type="application/octet-stream"/>
+    </item>
+
+
+    <item>
       <title>Version 1.1.2</title>
       <pubDate>Thu, 27 Apr 2023 08:15:16 +0000</pubDate>
       <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>

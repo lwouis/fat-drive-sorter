@@ -1,5 +1,13 @@
 # Release notes
 
+# [1.2.0](https://github.com/lwouis/fat-drive-sorter/compare/v1.1.2...v1.2.0) (2025-01-07)
+
+
+### Features
+
+* add italian, french, and chinese localizations ([fceb9e9](https://github.com/lwouis/fat-drive-sorter/commit/fceb9e9))
+* list all fat drives, instead of ejectable drives ([f555c15](https://github.com/lwouis/fat-drive-sorter/commit/f555c15))
+
 ## [1.1.2](https://github.com/lwouis/fat-drive-sorter/compare/v1.1.1...v1.1.2) (2023-04-27)
 
 
