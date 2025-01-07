@@ -139,21 +139,24 @@ class Window: NSWindow {
             let url = Bundle.main.url(forAuxiliaryExecutable: "fatsort")!
             if window.listButton.isEnabled {
                 let command = "\(url.path) \(drive.bsdNode)\(Window.fatsortFlagsFromUiSettings())"
+                debugPrint("fatsort command", command)
                 do {
                     let data = try Authorization.executeWithPrivileges(command)
                     let stdout = String(bytes: data.readDataToEndOfFile(), encoding: .utf8)!
-                    debugPrint("fatsort", command, stdout)
+                    debugPrint("fatsort stdout", stdout)
                 } catch {
-                    debugPrint("fatsort", command, error)
+                    debugPrint("fatsort error", command, error)
                 }
             }
+            let command = "\(url.path) \(drive.bsdNode) -l"
+            debugPrint("fatsort command", command)
             do {
-                let data = try Authorization.executeWithPrivileges("\(url.path) \(drive.bsdNode) -l")
+                let data = try Authorization.executeWithPrivileges(command)
                 let stdout = String(bytes: data.readDataToEndOfFile(), encoding: .utf8)!
-                debugPrint("fatsort -l", stdout)
+                debugPrint("fatsort stdout", stdout)
                 updateFilesView(stdout)
             } catch {
-                debugPrint("fatsort -l", error)
+                debugPrint("fatsort error", command, error)
             }
             DADiskMount(daDisk, nil, DADiskMountOptions(kDADiskMountOptionDefault), Window.afterMount, nil)
         }
