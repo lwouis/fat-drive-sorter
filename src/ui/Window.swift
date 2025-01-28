@@ -11,6 +11,7 @@ class Window: NSWindow {
     var noDriveText: NSTextField!
     var directoryButton: NSButton!
     var sortByDropdown: NSPopUpButton!
+    var caseSensitiveCheckbox: NSButton!
     var listButton: NSButton!
     var sortButton: NSButton!
 
@@ -52,22 +53,22 @@ class Window: NSWindow {
     private func getDrives() -> [Drive] {
         let keys: Set<URLResourceKey> = [.volumeLocalizedNameKey, .volumeLocalizedFormatDescriptionKey]
         return FileManager.default
-                .mountedVolumeURLs(includingResourceValuesForKeys: Array(keys), options: [.skipHiddenVolumes])!
-                .compactMap {
-                    let values = try? $0.resourceValues(forKeys: keys)
-                    let name = values?.volumeLocalizedName
-                    let format = values?.volumeLocalizedFormatDescription
-                    // we can't check if the drive is "external"; some external drives are not ejectable
-                    // we can only check that it's a FAT drive
-                    if format?.contains("FAT") == true,
-                       let name = name,
-                       let daDisk = DADiskCreateFromVolumePath(kCFAllocatorDefault, daSession, $0 as CFURL),
-                       let bsdName = DADiskGetBSDName(daDisk) {
-                        let bsdNode = "/dev/" + String(cString: bsdName)
-                        return Drive($0.path, name, bsdNode, daDisk)
-                    }
-                    return nil
+            .mountedVolumeURLs(includingResourceValuesForKeys: Array(keys), options: [.skipHiddenVolumes])!
+            .compactMap {
+                let values = try? $0.resourceValues(forKeys: keys)
+                let name = values?.volumeLocalizedName
+                let format = values?.volumeLocalizedFormatDescription
+                // we can't check if the drive is "external"; some external drives are not ejectable
+                // we can only check that it's a FAT drive
+                if format?.contains("FAT") == true,
+                   let name = name,
+                   let daDisk = DADiskCreateFromVolumePath(kCFAllocatorDefault, daSession, $0 as CFURL),
+                   let bsdName = DADiskGetBSDName(daDisk) {
+                    let bsdNode = "/dev/" + String(cString: bsdName)
+                    return Drive($0.path, name, bsdNode, daDisk)
                 }
+                return nil
+            }
     }
 
     private func observeVolumeChanges() {
@@ -86,6 +87,7 @@ class Window: NSWindow {
         driveDropdown.addItems(withTitles: drives.map { $0.name })
         sortByDropdown = NSPopUpButton(frame: .zero)
         sortByDropdown.addItems(withTitles: Order.allCases.map { $0.localizedString })
+        caseSensitiveCheckbox = NSButton(checkboxWithTitle: "", target: nil, action: nil)
         if #available(macOS 11.0, *) {
             for i in 0..<sortByDropdown.numberOfItems {
                 let item = sortByDropdown.item(at: i)!
@@ -114,7 +116,9 @@ class Window: NSWindow {
             [NSTextField(labelWithString: NSLocalizedString("Drive:", comment: "")), driveDropdownStackView],
             [NSTextField(labelWithString: NSLocalizedString("Directory (optional):", comment: "")), directoryAndClear],
             [NSTextField(labelWithString: NSLocalizedString("Order:", comment: "")), sortByDropdown],
+            [NSTextField(labelWithString: NSLocalizedString("Case-sensitive:", comment: "")), caseSensitiveCheckbox],
         ])
+        subGridView.yPlacement = .center
         subGridView.column(at: 0).xPlacement = .trailing
         subGridView.rowSpacing = 10
         subGridView.columnSpacing = 10
@@ -138,7 +142,7 @@ class Window: NSWindow {
         if let drive = window.drive {
             let url = Bundle.main.url(forAuxiliaryExecutable: "fatsort")!
             if window.listButton.isEnabled {
-                let command = "\(url.path) \(drive.bsdNode)\(Window.fatsortFlagsFromUiSettings())"
+                let command = "\(url.path) \(drive.bsdNode)\(fatsortFlagsFromUiSettings())"
                 debugPrint("fatsort command", command)
                 do {
                     let data = try Authorization.executeWithPrivileges(command)
@@ -158,13 +162,13 @@ class Window: NSWindow {
             } catch {
                 debugPrint("fatsort error", command, error)
             }
-            DADiskMount(daDisk, nil, DADiskMountOptions(kDADiskMountOptionDefault), Window.afterMount, nil)
+            DADiskMount(daDisk, nil, DADiskMountOptions(kDADiskMountOptionDefault), afterMount, nil)
         }
     }
 
     private static func updateFilesView(_ stdout: String) {
-        // window.filesOnDrive = Window.fatsortListingToHierarchy("File system: exFAT.\n\n/\n.Spotlight-V100\n.Trashes\na\nb\n._1.mp3\n._2.mp3\n1.mp3\n2.mp3\n3.mp3\nALBUM.PIC\nM3U.LIB\nMUSIC.LIB\nUSERPL1.PL\nUSERPL2.PL\nUSERPL3.PL\n\n/.Spotlight-V100/\nStore-V2\nVolumeConfiguration.plist\n\n/.Spotlight-V100/Store-V2/\n\n/.Trashes/\n501\n._501\n\n/.Trashes/501/\n\n/a/\n._1.mp3\n._2.mp3\n1.mp3\n2.mp3\n3.mp3\nsuba\n\n/a/suba/\n3.mp3\n\n/b/\n._1.mp3\n._2.mp3\n1.mp3\n2.mp3\n3.mp3")
-        window.filesOnDrive = Window.fatsortListingToHierarchy(stdout)
+        // window.filesOnDrive = fatsortListingToHierarchy("File system: exFAT.\n\n/\n.Spotlight-V100\n.Trashes\na\nb\n._1.mp3\n._2.mp3\n1.mp3\n2.mp3\n3.mp3\nALBUM.PIC\nM3U.LIB\nMUSIC.LIB\nUSERPL1.PL\nUSERPL2.PL\nUSERPL3.PL\n\n/.Spotlight-V100/\nStore-V2\nVolumeConfiguration.plist\n\n/.Spotlight-V100/Store-V2/\n\n/.Trashes/\n501\n._501\n\n/.Trashes/501/\n\n/a/\n._1.mp3\n._2.mp3\n1.mp3\n2.mp3\n3.mp3\nsuba\n\n/a/suba/\n3.mp3\n\n/b/\n._1.mp3\n._2.mp3\n1.mp3\n2.mp3\n3.mp3")
+        window.filesOnDrive = fatsortListingToHierarchy(stdout)
         window.filesView.files = window.filesOnDrive
         window.filesView.reloadData()
     }
@@ -202,7 +206,11 @@ class Window: NSWindow {
     }
 
     static func fatsortFlagsFromUiSettings() -> String {
+        // by default, we sort in natural order
         var args = ["-n"]
+        if window.caseSensitiveCheckbox.state == .off {
+            args.append("-c")
+        }
         if window.directoryButton.title != window.defaultDirectoryTitle {
             args.append("-D \(window.directoryButton.title)")
         }

@@ -1,45 +1,15 @@
-
-/*%@ is FatDriveSorter*/
 "%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "%@ si è chiusa inaspettatamente. Invia segnalazione per aiutare a risolvere";
-
-/*No comment provided by engineer.*/
 "Directories first" = "";
-
-/*No comment provided by engineer.*/
 "Directory (optional):" = "Cartella (opzionale)";
-
-/*No comment provided by engineer.*/
 "Don’t send" = "Non spedire";
-
-/*No comment provided by engineer.*/
 "Drive:" = "Disco";
-
-/*No comment provided by engineer.*/
 "Files first" = "";
-
-/*No comment provided by engineer.*/
 "Mixed" = "";
-
-/*No comment provided by engineer.*/
 "No drive detected" = "Nessun disco";
-
-/*Copyright (human-readable)*/
 "NSHumanReadableCopyright" = "";
-
-/*No comment provided by engineer.*/
 "Order:" = "Order:";
-
-/*No comment provided by engineer.*/
 "Remember my choice" = "Ricorda mia scelta";
-
-/*No comment provided by engineer.*/
 "See current file order" = "Vedi attuale ordine";
-
-/*No comment provided by engineer.*/
 "Send" = "Send";
-
-/*No comment provided by engineer.*/
 "Send a crash report?" = "";
-
-/*No comment provided by engineer.*/
 "Sort" = "Sort";

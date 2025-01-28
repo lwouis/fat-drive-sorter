@@ -1,45 +1,15 @@
-
-/*%@ is FatDriveSorter*/
 "%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "您上次使用%@，它时崩溃了。 发送崩溃报告将有助于解决问题";
-
-/*No comment provided by engineer.*/
 "Directories first" = "文件夹先";
-
-/*No comment provided by engineer.*/
 "Directory (optional):" = "文件夹（选修的）：";
-
-/*No comment provided by engineer.*/
 "Don’t send" = "不要发送";
-
-/*No comment provided by engineer.*/
 "Drive:" = "硬盘：";
-
-/*No comment provided by engineer.*/
 "Files first" = "文件先";
-
-/*No comment provided by engineer.*/
 "Mixed" = "不管";
-
-/*No comment provided by engineer.*/
 "No drive detected" = "没有硬盘";
-
-/*Copyright (human-readable)*/
 "NSHumanReadableCopyright" = "GPL-3.0许可证";
-
-/*No comment provided by engineer.*/
 "Order:" = "订单：";
-
-/*No comment provided by engineer.*/
 "Remember my choice" = "记住我的选择";
-
-/*No comment provided by engineer.*/
 "See current file order" = "看当前订单";
-
-/*No comment provided by engineer.*/
 "Send" = "发送";
-
-/*No comment provided by engineer.*/
 "Send a crash report?" = "发送崩溃报告？";
-
-/*No comment provided by engineer.*/
 "Sort" = "种类";

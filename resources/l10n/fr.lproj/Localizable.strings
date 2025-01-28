@@ -1,45 +1,15 @@
-
-/*%@ is FatDriveSorter*/
 "%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "%@ a planté la dernière fois. Envoyer un rapport de plantage aidera à résoudre le problème";
-
-/*No comment provided by engineer.*/
 "Directories first" = "Dossiers en premier";
-
-/*No comment provided by engineer.*/
 "Directory (optional):" = "Dossier (optionel)";
-
-/*No comment provided by engineer.*/
 "Don’t send" = "Ne pas envoyer";
-
-/*No comment provided by engineer.*/
 "Drive:" = "Disque :";
-
-/*No comment provided by engineer.*/
 "Files first" = "Fichiers en premier";
-
-/*No comment provided by engineer.*/
 "Mixed" = "Mélangé";
-
-/*No comment provided by engineer.*/
 "No drive detected" = "Aucun disque détecté";
-
-/*Copyright (human-readable)*/
 "NSHumanReadableCopyright" = "Licence GPL 3.0";
-
-/*No comment provided by engineer.*/
 "Order:" = "Ordre :";
-
-/*No comment provided by engineer.*/
 "Remember my choice" = "Enregistrer mon choix";
-
-/*No comment provided by engineer.*/
 "See current file order" = "Voir le tri actuel des fichiers";
-
-/*No comment provided by engineer.*/
 "Send" = "Envoyer";
-
-/*No comment provided by engineer.*/
 "Send a crash report?" = "Envoyer un rapport de plantage ?";
-
-/*No comment provided by engineer.*/
 "Sort" = "Trier";
