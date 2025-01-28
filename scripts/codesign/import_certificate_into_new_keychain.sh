@@ -17,3 +17,5 @@ security unlock-keychain -p $keychainPassword $keychain
 # import p12 into Keychain
 security import $certificateFile.p12 -P "$certificatePassword" -T /usr/bin/codesign
 security set-key-partition-list -S apple-tool:,apple: -s -k $keychainPassword $keychain > /dev/null
+
+security find-identity
