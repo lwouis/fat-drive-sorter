@@ -1,5 +1,12 @@
 # Release notes
 
+# [1.3.0](https://github.com/lwouis/fat-drive-sorter/compare/v1.2.0...v1.3.0) (2025-01-28)
+
+
+### Features
+
+* add checkbox to decide if the sorting is case-sensitive or not ([b3ff2dc](https://github.com/lwouis/fat-drive-sorter/commit/b3ff2dc))
+
 # [1.2.0](https://github.com/lwouis/fat-drive-sorter/compare/v1.1.2...v1.2.0) (2025-01-07)
 
 
