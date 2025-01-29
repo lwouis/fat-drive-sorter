@@ -1,5 +1,12 @@
 # Release notes
 
+## [1.3.1](https://github.com/lwouis/fat-drive-sorter/compare/v1.3.0...v1.3.1) (2025-01-29)
+
+
+### Bug Fixes
+
+* fallback to english when localization is missing ([80f51aa](https://github.com/lwouis/fat-drive-sorter/commit/80f51aa))
+
 # [1.3.0](https://github.com/lwouis/fat-drive-sorter/compare/v1.2.0...v1.3.0) (2025-01-28)
 
 
