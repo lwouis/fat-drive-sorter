@@ -1,4 +1,5 @@
 "%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "您上次使用%@，它时崩溃了。 发送崩溃报告将有助于解决问题";
+"Case-sensitive:" = "Case-sensitive:";
 "Directories first" = "文件夹先";
 "Directory (optional):" = "文件夹（选修的）：";
 "Don’t send" = "不要发送";

@@ -1,4 +1,5 @@
 "%@ crashed last time you used it. Sending a crash report will help get the issue fixed" = "%@ a planté la dernière fois. Envoyer un rapport de plantage aidera à résoudre le problème";
+"Case-sensitive:" = "Case-sensitive:";
 "Directories first" = "Dossiers en premier";
 "Directory (optional):" = "Dossier (optionel)";
 "Don’t send" = "Ne pas envoyer";
